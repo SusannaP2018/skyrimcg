@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CharacterGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Susanna's Random Character Generator for Skyrim" Height="441.653" Width="800" Icon="Icon1.ico">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid Margin="0,0,0,1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="206*"/>
+            <RowDefinition Height="213*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush x:Name="bg" ImageSource="bin/bg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Button x:Name="btnGetCharacter" Content="Create new character" HorizontalAlignment="Center" Margin="294.475,59.964,301.476,0" VerticalAlignment="Top" Width="196.049" Click="btnGetCharacter_Click" Height="34.788" FontFamily="Sitka Display" FontSize="18" Background="#FFD4D2BE" UseLayoutRounding="False" FontWeight="Bold"/>
+        <Label x:Name="lblResult" Content="Click the button!" HorizontalAlignment="Center" Margin="39,0,44,0" VerticalAlignment="Top" Height="166" Width="709" FontFamily="Sitka Display" FontSize="18" Background="{x:Null}" Grid.Row="1" Foreground="White" HorizontalContentAlignment="Center"/>
+
     </Grid>
 </Window>
